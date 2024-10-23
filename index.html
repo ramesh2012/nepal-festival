@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEPAL FESTIVAL</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="" />
+
+    <!-- Other meta tags -->
+    <meta name="description" content="यो Nepal फेस्टिवल को डिजाइन बनाउने टुल हो। तपाईंले आफ्नो मनपर्ने फोटो चयन गरेर फेस्टिवल ब्यानर बनाउन सक्नुहुन्छ र फेस्टिवललाई सफल बनाउनको लागि अनुरोध गर्दछौं।">
+    <!-- Link to the thumbnail image -->
+    <link rel="image_src" href="img/thumbnail.png">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="js/caman.full.js"></script>
+	<main>
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Nepal Festival Logo" />
+            </div>
+        </header>
+        <div class="banner">
+            <img id="nepal-festival-banner-img" src="banner.png" alt="Festival Banner" />
+        </div>
+        <style>
+            .banner {
+                text-align: center;
+                margin: 20px 0;
+            }
+            .banner img {
+                max-width: 100%;
+                height: auto;
+                /* border-radius: 10px; */
+            }
+        </style>
+        <div class="slogan">
+            <strong>नेपाल र नेपालीको जापानमा पहिचान।। <br> १४ औं नेपाल फेस्टिवल मार्फत नेपालमा पर्यटन प्रवर्द्धन।।</strong>
+        </div>
+        <style>
+            .slogan {
+                /* background: linear-gradient(90deg, #fe7e00, #feda84, #fff09f); */
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 1.2em;
+                margin: -15px 0;
+            }
+            .slogan strong {
+                color: #d32f2f;
+            }
+        </style>
+    <!-- </div> -->
+
+    <div class="descp">
+        <strong> यो १४ औं नेपाल फेस्टिवलको ब्यानर बनाउने टुल हो। तपाईंले आफ्नो मनपर्ने फोटो राखेर नेपालफेस्टिवलको ब्यानर बनाउन
+            सक्नुहुन्छ</strong>
+    </div>
+    <style>
+        .descp {
+            /* background-color: #e0f7fa; */
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 25px 0;
+        }
+        .descp strong {
+            /* color: #00796b; */
+        }
+    </style>
+</div>
+
+        <!-- <div class="description"> -->
+           
+        <div class="upload-img">
+            <input type="file" accept="image/*" onchange="loadFile(event)" id="file" class="inputfile" />
+            <label for="file">फोटो छान्नुहोस्</label>
+        </div>
+
+        <div class="center photo-frame">
+            <img id="overlay-img" src="plain.png" alt="Overlay Image" />
+        </div>
+
+        <div class="center">
+            <button id="downloadBtn" class="btn blue-btn" style="display: none;" onclick="downloadImage()">फोटो डाउनलोड गर्नुहोस्</button>
+        </div>
+
+        <!-- <section class="company-logo" style="border-bottom: 1px solid rgb(170, 170, 170); padding: 30px;">
+            <h2>फेस्टिवल सपोर्टर्स</h2>
+            <div class="description info">
+                NRNA चिबा को नेपाल फेस्टिवल २०२४ लाई सफल बनाउन विभिन्न संस्थाबाट हामीलाई सहयोग र सपोर्ट गर्नु भएकोमा हामी एनआरएनए चिबा परिवार धन्यवाद प्रकट गर्दछौं।
+                यस चिबा नेपाल फेस्टिवल २०२४ लाई सबै जना मिलि भव्य र सभ्यका साथ सफल बनाऔं।
+            </div>
+            <div class="company-logo-animation"></div>
+        </section> -->
+
+        <div class="madeBy">
+            <strong>Made by <a href="#" target="_blank" id="developerLink">RAMESH GIRI</a><a href="#" target="_blank"></a></strong>
+        </div>
+        <!-- Modal Structure -->
+        <div id="developerModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- <img src="profile.png" alt="Developer Image" style="width: 100px; height: 100px; border-radius: 50%; display: block; margin: 0 auto;"> -->
+                <h2 style="text-align: center;">RAMESH GIRI</h2>
+                <p><strong>Job:</strong> Software Engineer and Social Worker</p>
+                <p><strong>Organization:</strong> NRNA CHIBA</p>
+                <p><strong>Position:</strong> Vice Coordinator (2023 - 2025)</p>
+                <p><strong>Bio:</strong> Part of the team at NRNA CHIBA organization while working as a Engineer. Passionate about development, product brainstorming. <br> <br>Contact me if you are interested in creating your business website or integrating business web applications.</p>
+            </div>
+        </div>
+
+        <style>
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px; 
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 600px; /* Added to limit the width on larger screens */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+            .madeBy {
+                padding: 15px;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 1em;
+                margin: 25px 0;
+            }
+            
+        </style>
+
+        <script>
+            document.getElementById('developerLink').addEventListener('click', function(event) {
+                event.preventDefault();
+                document.getElementById('developerModal').style.display = 'block';
+            });
+
+            document.querySelector('.close').addEventListener('click', function() {
+                document.getElementById('developerModal').style.display = 'none';
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target == document.getElementById('developerModal')) {
+                    document.getElementById('developerModal').style.display = 'none';
+                }
+            });
+        </script>
+    </main>
+
+	<script src="js/script.js"></script> <!-- Assuming the JavaScript has been moved to an external file named script.js -->
+</body>
+</html>
